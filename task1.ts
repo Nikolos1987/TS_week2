@@ -1,4 +1,10 @@
-const totalPrice = ({ price, discount, isInstallment, months }) => {
+interface Price{
+    price:number
+    discount:number
+    isInstallment:boolean
+    months:number
+}
+const totalPrice = ({ price, discount, isInstallment, months }:Price) => {
     // Your code here...
 };
 
