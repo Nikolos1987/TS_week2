@@ -37,7 +37,7 @@ const posts = [
     }
 ];
 const normalizeData = (unnormalizedData) => {
-    const output = { byID: {}, allIds: [] };
+    const output = {};
     unnormalizedData.forEach((element) => {
         output.byID[element.id] = element;
         output.allIds.push(element.id);
